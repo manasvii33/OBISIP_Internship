@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="progress-card">
+            <div class="stats">
+                <h2>Todo Done</h2>
+                <p>Keep it up!</p>
+                <div class="progress-bar-bg">
+                    <div id="progress-bar-fill"></div>
+                </div>
+            </div>
+            <div class="circle-stat">
+                <span id="stat-count">0/0</span>
+            </div>
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="taskInput" placeholder="Write your task">
+            <button id="addBtn">+</button>
+        </div>
+
+        <ul id="taskList">
+            </ul>
+    </div>
+
+    <script src="jscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    background-color: #010409;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.progress-card {
+    border: 1px solid #30363d;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.stats h2 { color: white; font-size: 1.8rem; }
+.stats p { color: #8b949e; font-size: 0.9rem; margin-bottom: 15px; }
+
+.progress-bar-bg {
+    width: 140px;
+    height: 8px;
+    background: #21262d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: #00d2ff;
+    transition: width 0.4s ease;
+}
+
+.circle-stat {
+    background: #79a1eb;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#taskInput {
+    flex: 1;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: white;
+    outline: none;
+}
+
+#addBtn {
+    background: #79a1eb;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+#taskList { list-style: none; }
+
+.task-item {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-info { display: flex; align-items: center; gap: 12px; color: white; }
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00d2ff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.completed .checkbox { background: #00d2ff; }
+.completed .task-text { text-decoration: line-through; opacity: 0.5; }
+
+.icons { display: flex; gap: 10px; }
+.btn-icon { background: none; border: none; cursor: pointer; color: #8b949e; }
+.btn-icon:hover { color: #ff7b72; }
